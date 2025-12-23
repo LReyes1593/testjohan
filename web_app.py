@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import altair as alt
 
-logo = Image.open("logo.jpg")
+logo = Image.open("PanamLogo.jpg")
 
 # Cargar CSV y seleccionar columnas de interés
 df = pd.read_csv('Employee_data.csv')
@@ -166,3 +166,4 @@ st.markdown(
     Esta herramienta permite explorar los datos de manera interactiva para apoyar la toma de decisiones en la empresa **Socialize Your Knowledge**.
     """
 )
+
