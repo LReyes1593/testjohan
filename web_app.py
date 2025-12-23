@@ -3,12 +3,14 @@ import streamlit as st
 from PIL import Image
 import altair as alt
 
-logo = Image.open("PanamLogo.jpg")
+logo = Image.open("logo.jpg")
 
 # Cargar CSV y seleccionar columnas de interés
-df = pd.read_csv('BD_VENTAS2025.csv')
-columnas = ['CANAL', 'CATEGORIA', 'TIPO_PROD', 'FABRICACION', 'PIEZAS',
-            'SUB_TOTAL', 'COSTO']
+df = pd.read_csv('Employee_data.csv')
+columnas = ['name_employee', 'birth_date', 'age', 'gender', 'marital_status',
+            'hiring_date', 'position', 'salary', 'performance_score',
+            'last_performance_date', 'average_work_hours', 'satisfaction_level',
+            'absences']
 df = df[columnas]
 
 # Configuración de la página
@@ -164,5 +166,3 @@ st.markdown(
     Esta herramienta permite explorar los datos de manera interactiva para apoyar la toma de decisiones en la empresa **Socialize Your Knowledge**.
     """
 )
-
-
