@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import altair as alt
 
-logo = Image.open("logo.jpg")
+logo = Image.open("PanamLogo.jpg")
 
 # Cargar CSV y seleccionar columnas de interés
 df = pd.read_csv('Employee_data.csv')
@@ -15,7 +15,7 @@ df = df[columnas]
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Análisis de Desempeño - Socialize Your Knowledge",
+    page_title="Análisis Luis - Socialize Your Knowledge",
     layout="wide"
 )
 
@@ -24,7 +24,7 @@ st.set_page_config(
 # ------------------------------------------------------------------
 col1, col2 = st.columns([4, 1])
 with col1:
-    st.title("Análisis de Desempeño de los Colaboradores")
+    st.title("Análisis de Ventas Panam")
     st.markdown(
         """
         Esta aplicación web te permitirá visualizar y analizar métricas clave sobre el rendimiento de los colaboradores.  
