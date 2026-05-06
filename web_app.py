@@ -1,9 +1,5 @@
-from PIL import Image
+# Pedir el nombre al usuario
+nombre = input("Hola, ¿cómo te llamas? ")
 
-# Carga la imagen desde la misma carpeta donde está tu código
-# Asegúrate de poner el nombre correcto y la extensión (.jpg, .png)
-try:
-    img = Image.open("PanamLogo.jpg")
-    img.show()
-except FileNotFoundError:
-    print("No se encontró el archivo de imagen.")
+# Saludar usando un f-string (la forma más moderna y limpia)
+print(f"¡Un gusto saludarte, {nombre}! Espero que tengas un excelente día.")
